@@ -1,6 +1,0 @@
-cimpy.examples.importCIGREMV module
-***********************************
-
-
-Inheritance Diagram:
-====================
