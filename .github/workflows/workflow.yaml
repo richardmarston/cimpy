@@ -22,7 +22,7 @@ jobs:
       - name: Create doc redirect
         uses: "finnp/create-file-action@master"
         env:
-            FILE_NAME: ${{ github.workspace }}/built_documentation.nojekyll
+            FILE_NAME: ${{ github.workspace }}/built_documentation/.nojekyll
             FILE_DATA: ""
 
       - name: Push
