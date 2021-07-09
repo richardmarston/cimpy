@@ -1,0 +1,22 @@
+cimpy.cgmes_v2_4_15.SvStatus module
+***********************************
+
+class cimpy.cgmes_v2_4_15.SvStatus.SvStatus(ConductingEquipment=None, inService=False)
+
+   State variable for status.
+
+   ConductingEquipment:
+      The conducting equipment associated with the status state
+      variable. Default: None
+
+   InService:
+      The in service status as a result of topology processing.
+      Default: False
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

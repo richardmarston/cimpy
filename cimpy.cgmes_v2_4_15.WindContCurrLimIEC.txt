@@ -1,0 +1,85 @@
+cimpy.cgmes_v2_4_15.WindContCurrLimIEC module
+*********************************************
+
+class cimpy.cgmes_v2_4_15.WindContCurrLimIEC.WindContCurrLimIEC(imax=0.0, imaxdip=0.0, mdfslim=False, mqpri=False, tufilt=0, WindTurbineType3or4IEC=None, WindDynamicsLookupTable='list', *args, **kw_args)
+
+      Current limitation model.  The current limitation model combines
+      the physical limits.  Reference: IEC Standard 61400-27-1 Section
+      6.6.5.7.
+
+      imax:
+         Maximum continuous current at the wind turbine terminals ().
+         It is type dependent parameter. Default: 0.0
+
+      imaxdip:
+         Maximum current during voltage dip at the wind turbine
+         terminals (). It is project dependent parameter. Default: 0.0
+
+      mdfslim:
+         Limitation of type 3 stator current  ():  - false=0: total
+         current limitation,  - true=1: stator current limitation).
+         It is type dependent parameter. Default: False
+
+      mqpri:
+         Prioritisation of q control during LVRT (): - true = 1:
+         reactive power priority, - false = 0: active power priority.
+         It is project dependent parameter. Default: False
+
+      tufilt:
+         Voltage measurement filter time constant (). It is type
+         dependent parameter. Default: 0
+
+      WindTurbineType3or4IEC:
+         Wind turbine type 3 or 4 model with which this wind control
+         current limitation model is associated. Default: None
+
+      WindDynamicsLookupTable:
+         The current control limitation model with which this wind
+         dynamics lookup table is associated. Default: "list"
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

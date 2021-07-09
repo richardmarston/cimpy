@@ -1,0 +1,30 @@
+cimpy.cgmes_v2_4_15.SvPowerFlow module
+**************************************
+
+class cimpy.cgmes_v2_4_15.SvPowerFlow.SvPowerFlow(Terminal=None, p=0.0, q=0.0)
+
+   State variable for power flow. Load convention is used for flow
+   direction. This means flow out from the TopologicalNode into the
+   equipment is positive.
+
+   Terminal:
+      The terminal associated with the power flow state variable.
+      Default: None
+
+   P:
+      The active power flow. Load sign convention is used, i.e.
+      positive sign means flow out from a TopologicalNode (bus) into
+      the conducting equipment. Default: 0.0
+
+   Q:
+      The reactive power flow. Load sign convention is used, i.e.
+      positive sign means flow out from a TopologicalNode (bus) into
+      the conducting equipment. Default: 0.0
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

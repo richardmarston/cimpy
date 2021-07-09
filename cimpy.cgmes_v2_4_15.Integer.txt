@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.Integer module
+**********************************
+
+class cimpy.cgmes_v2_4_15.Integer.Integer
+
+   An integer number. The range is unspecified and not limited.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

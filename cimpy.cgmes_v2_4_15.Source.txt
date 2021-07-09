@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.Source module
+*********************************
+
+class cimpy.cgmes_v2_4_15.Source.Source
+
+   Source gives information related to the origin of a value.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

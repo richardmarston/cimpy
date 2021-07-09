@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.String module
+*********************************
+
+class cimpy.cgmes_v2_4_15.String.String
+
+   A string consisting of a sequence of characters. The character
+   encoding is UTF-8. The string length is unspecified and unlimited.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

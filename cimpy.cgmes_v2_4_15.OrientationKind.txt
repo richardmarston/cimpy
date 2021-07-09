@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.OrientationKind module
+******************************************
+
+class cimpy.cgmes_v2_4_15.OrientationKind.OrientationKind
+
+   The orientation of the coordinate system with respect to top, left,
+   and the coordinate number system.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,123 @@
+cimpy.cgmes_v2_4_15.TextDiagramObject module
+********************************************
+
+class cimpy.cgmes_v2_4_15.TextDiagramObject.TextDiagramObject(text='', *args, **kw_args)
+
+      A diagram object for placing free-text or text derived from an
+      associated domain object.
+
+      text:
+         The text that is displayed by this text diagram object.
+         Default: ''
+
+   Documentation of parent class DiagramObject:
+
+      An object that defines one or more points in a given space. This
+      object can be associated with anything that specializes
+      IdentifiedObject. For single line diagrams such objects
+      typically include such items as analog values, breakers,
+      disconnectors, power transformers, and transmission lines.
+
+      Diagram:
+         A diagram object is part of a diagram. Default: None
+
+      drawingOrder:
+         The drawing order of this element. The higher the number, the
+         later the element is drawn in sequence. This is used to
+         ensure that elements that overlap are rendered in the correct
+         order. Default: 0
+
+      isPolygon:
+         Defines whether or not the diagram objects points define the
+         boundaries of a polygon or the routing of a polyline. If this
+         value is true then a receiving application should consider
+         the first and last points to be connected. Default: False
+
+      offsetX:
+         The offset in the X direction. This is used for defining the
+         offset from centre for rendering an icon (the default is that
+         a single point specifies the centre of the icon).  The offset
+         is in per-unit with 0 indicating there is no offset from the
+         horizontal centre of the icon.  -0.5 indicates it is offset
+         by 50% to the left and 0.5 indicates an offset of 50% to the
+         right. Default: 0.0
+
+      offsetY:
+         The offset in the Y direction. This is used for defining the
+         offset from centre for rendering an icon (the default is that
+         a single point specifies the centre of the icon).  The offset
+         is in per-unit with 0 indicating there is no offset from the
+         vertical centre of the icon.  The offset direction is
+         dependent on the orientation of the diagram, with -0.5 and
+         0.5 indicating an offset of +/- 50% on the vertical axis.
+         Default: 0.0
+
+      rotation:
+         Sets the angle of rotation of the diagram object.  Zero
+         degrees is pointing to the top of the diagram.  Rotation is
+         clockwise. Default: 0.0
+
+      IdentifiedObject:
+         The diagram objects that are associated with the domain
+         object. Default: None
+
+      DiagramObjectPoints:
+         A diagram object can have 0 or more points to reflect its
+         layout position, routing (for polylines) or boundary (for
+         polygons). Default: "list"
+
+      VisibilityLayers:
+         A diagram object can be part of multiple visibility layers.
+         Default: "list"
+
+      DiagramObjectStyle:
+         A diagram object has a style associated that provides a
+         reference for the style used in the originating system.
+         Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.DCPolarityKind module
+*****************************************
+
+class cimpy.cgmes_v2_4_15.DCPolarityKind.DCPolarityKind
+
+   Polarity for DC circuits.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

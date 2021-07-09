@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.RemoteSignalKind module
+*******************************************
+
+class cimpy.cgmes_v2_4_15.RemoteSignalKind.RemoteSignalKind
+
+   Type of input signal coming from remote bus.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

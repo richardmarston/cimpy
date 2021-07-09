@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.ControlAreaTypeKind module
+**********************************************
+
+class cimpy.cgmes_v2_4_15.ControlAreaTypeKind.ControlAreaTypeKind
+
+   The type of control area.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

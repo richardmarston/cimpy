@@ -1,0 +1,75 @@
+cimpy.cgmes_v2_4_15.ValueAliasSet module
+****************************************
+
+class cimpy.cgmes_v2_4_15.ValueAliasSet.ValueAliasSet(Commands='list', Discretes='list', RaiseLowerCommands='list', Values='list', *args, **kw_args)
+
+      Describes the translation of a set of values into a name and is
+      intendend to facilitate cusom translations. Each ValueAliasSet
+      has a name, description etc. A specific Measurement may
+      represent a discrete state like Open, Closed, Intermediate etc.
+      This requires a translation from the MeasurementValue.value
+      number to a string, e.g. 0->"Invalid", 1->"Open", 2->"Closed",
+      3->"Intermediate". Each ValueToAlias member in
+      ValueAliasSet.Value describe a mapping for one particular value
+      to a name.
+
+      Commands:
+         The Commands using the set for translation. Default: "list"
+
+      Discretes:
+         The Measurements using the set for translation. Default:
+         "list"
+
+      RaiseLowerCommands:
+         The Commands using the set for translation. Default: "list"
+
+      Values:
+         The ValueAliasSet having the ValueToAlias mappings. Default:
+         "list"
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

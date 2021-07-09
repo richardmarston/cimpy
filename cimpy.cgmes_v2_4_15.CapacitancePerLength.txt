@@ -1,0 +1,29 @@
+cimpy.cgmes_v2_4_15.CapacitancePerLength module
+***********************************************
+
+class cimpy.cgmes_v2_4_15.CapacitancePerLength.CapacitancePerLength(value=0.0, unit=None, multiplier=None, denominatorUnit=None, denominatorMultiplier=None)
+
+   Capacitance per unit of length.
+
+   Value:
+      Default: 0.0
+
+   Unit:
+      Default: None
+
+   Multiplier:
+      Default: None
+
+   DenominatorUnit:
+      Default: None
+
+   DenominatorMultiplier:
+      Default: None
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

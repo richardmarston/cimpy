@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.StaticLoadModelKind module
+**********************************************
+
+class cimpy.cgmes_v2_4_15.StaticLoadModelKind.StaticLoadModelKind
+
+   Type of static load model.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,157 @@
+cimpy.cgmes_v2_4_15.ExcDC3A1 module
+***********************************
+
+class cimpy.cgmes_v2_4_15.ExcDC3A1.ExcDC3A1(ka=0.0, ta=0, vrmax=0.0, vrmin=0.0, te=0, kf=0.0, tf=0, kp=0.0, ki=0.0, vbmax=0.0, exclim=False, ke=0.0, vb1max=0.0, vblim=False, *args, **kw_args)
+
+      This is modified old IEEE type 3 excitation system.
+
+      ka:
+         Voltage regulator gain (Ka).  Typical Value = 300. Default:
+         0.0
+
+      ta:
+         Voltage regulator time constant (Ta).  Typical Value = 0.01.
+         Default: 0
+
+      vrmax:
+         Maximum voltage regulator output (Vrmax).  Typical Value = 5.
+         Default: 0.0
+
+      vrmin:
+         Minimum voltage regulator output (Vrmin).  Typical Value = 0.
+         Default: 0.0
+
+      te:
+         Exciter time constant, integration rate associated with
+         exciter control (Te).  Typical Value = 1.83. Default: 0
+
+      kf:
+         Excitation control system stabilizer gain (Kf).  Typical
+         Value = 0.1. Default: 0.0
+
+      tf:
+         Excitation control system stabilizer time constant (Tf).
+         Typical Value = 0.675. Default: 0
+
+      kp:
+         Potential circuit gain coefficient (Kp).  Typical Value =
+         4.37. Default: 0.0
+
+      ki:
+         Potential circuit gain coefficient (Ki).  Typical Value =
+         4.83. Default: 0.0
+
+      vbmax:
+         Available exciter voltage limiter (Vbmax).  Typical Value =
+         11.63. Default: 0.0
+
+      exclim:
+         (exclim). true = lower limit of zero is applied to integrator
+         output false = lower limit of zero not applied to integrator
+         output. Typical Value = true. Default: False
+
+      ke:
+         Exciter constant related to self-excited field (Ke).  Typical
+         Value = 1. Default: 0.0
+
+      vb1max:
+         Available exciter voltage limiter (Vb1max).  Typical Value =
+         11.63. Default: 0.0
+
+      vblim:
+         Vb limiter indicator. true = exciter Vbmax limiter is active
+         false = Vb1max is active.  Typical Value = true. Default:
+         False
+
+   Documentation of parent class ExcitationSystemDynamics:
+
+      Excitation system function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Synchronous machine model with which this excitation system
+         model is associated. Default: None
+
+      PowerSystemStabilizerDynamics:
+         Power system stabilizer model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model associated with
+         this excitation system model. Default: None
+
+      VoltageCompensatorDynamics:
+         Voltage compensator model associated with this excitation
+         system model. Default: None
+
+      DiscontinuousExcitationControlDynamics:
+         Discontinuous excitation control model associated with this
+         excitation system model. Default: None
+
+      UnderexcitationLimiterDynamics:
+         Undrexcitation limiter model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType2Dynamics:
+         Power Factor or VAr controller Type II model associated with
+         this excitation system model. Default: None
+
+      OverexcitationLimiterDynamics:
+         Overexcitation limiter model associated with this excitation
+         system model. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

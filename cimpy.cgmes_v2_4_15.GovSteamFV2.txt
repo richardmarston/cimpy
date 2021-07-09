@@ -1,0 +1,124 @@
+cimpy.cgmes_v2_4_15.GovSteamFV2 module
+**************************************
+
+class cimpy.cgmes_v2_4_15.GovSteamFV2.GovSteamFV2(mwbase=0.0, r=0.0, t1=0, vmax=0.0, vmin=0.0, k=0.0, t3=0, dt=0.0, tt=0, ta=0, tb=0, tc=0, ti=0, *args, **kw_args)
+
+      Steam turbine governor with reheat time constants and modeling
+      of the effects of fast valve closing to reduce mechanical power.
+
+      mwbase:
+         Alternate Base used instead of Machine base in equipment
+         model if necessary (MWbase) (>0).  Unit = MW. Default: 0.0
+
+      r:
+         (R). Default: 0.0
+
+      t1:
+         Governor time constant (T1). Default: 0
+
+      vmax:
+         (Vmax). Default: 0.0
+
+      vmin:
+         (Vmin). Default: 0.0
+
+      k:
+         Fraction of the turbine power developed by turbine sections
+         not involved in fast valving (K). Default: 0.0
+
+      t3:
+         Reheater time constant (T3). Default: 0
+
+      dt:
+         (Dt). Default: 0.0
+
+      tt:
+         Time constant with which power falls off after intercept
+         valve closure (Tt). Default: 0
+
+      ta:
+         Time after initial time for valve to close (Ta). Default: 0
+
+      tb:
+         Time after initial time for valve to begin opening (Tb).
+         Default: 0
+
+      tc:
+         Time after initial time for valve to become fully open (Tc).
+         Default: 0
+
+      ti:
+         Initial time to begin fast valving (Ti). Default: 0
+
+   Documentation of parent class TurbineGovernorDynamics:
+
+      Turbine-governor function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Turbine-governor model associated with this synchronous
+         machine model. Default: "list"
+
+      AsynchronousMachineDynamics:
+         Asynchronous machine model with which this turbine-governor
+         model is associated. Default: None
+
+      TurbineLoadControllerDynamics:
+         Turbine load controller providing input to this turbine-
+         governor. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

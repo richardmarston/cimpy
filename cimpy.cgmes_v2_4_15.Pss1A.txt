@@ -1,0 +1,144 @@
+cimpy.cgmes_v2_4_15.Pss1A module
+********************************
+
+class cimpy.cgmes_v2_4_15.Pss1A.Pss1A(inputSignalType=None, a1=0.0, a2=0.0, t1=0, t2=0, t3=0, t4=0, t5=0, t6=0, ks=0.0, vrmax=0.0, vrmin=0.0, vcu=0.0, vcl=0.0, a3=0.0, a4=0.0, a5=0.0, a6=0.0, a7=0.0, a8=0.0, kd=False, tdelay=0, *args, **kw_args)
+
+      Single input power system stabilizer. It is a modified version
+      in order to allow representation of various vendors'
+      implementations on PSS type 1A.
+
+      inputSignalType:
+         Type of input signal. Default: None
+
+      a1:
+         Notch filter parameter (A1). Default: 0.0
+
+      a2:
+         Notch filter parameter (A2). Default: 0.0
+
+      t1:
+         Lead/lag time constant (T1). Default: 0
+
+      t2:
+         Lead/lag time constant (T2). Default: 0
+
+      t3:
+         Lead/lag time constant (T3). Default: 0
+
+      t4:
+         Lead/lag time constant (T4). Default: 0
+
+      t5:
+         Washout time constant (T5). Default: 0
+
+      t6:
+         Transducer time constant (T6). Default: 0
+
+      ks:
+         Stabilizer gain (Ks). Default: 0.0
+
+      vrmax:
+         Maximum stabilizer output (Vrmax). Default: 0.0
+
+      vrmin:
+         Minimum stabilizer output (Vrmin). Default: 0.0
+
+      vcu:
+         Stabilizer input cutoff threshold (Vcu). Default: 0.0
+
+      vcl:
+         Stabilizer input cutoff threshold (Vcl). Default: 0.0
+
+      a3:
+         Notch filter parameter (A3). Default: 0.0
+
+      a4:
+         Notch filter parameter (A4). Default: 0.0
+
+      a5:
+         Notch filter parameter (A5). Default: 0.0
+
+      a6:
+         Notch filter parameter (A6). Default: 0.0
+
+      a7:
+         Notch filter parameter (A7). Default: 0.0
+
+      a8:
+         Notch filter parameter (A8). Default: 0.0
+
+      kd:
+         Selector (Kd).  true = e used false = e not used. Default:
+         False
+
+      tdelay:
+         Time constant (Tdelay). Default: 0
+
+   Documentation of parent class PowerSystemStabilizerDynamics:
+
+      Power system stabilizer function block whose behaviour is
+      described by reference to a standard model
+
+      RemoteInputSignal:
+         Remote input signal used by this power system stabilizer
+         model. Default: "list"
+
+      ExcitationSystemDynamics:
+         Excitation system model with which this power system
+         stabilizer model is associated. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

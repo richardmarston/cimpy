@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.WindQcontrolModesKind module
+************************************************
+
+class cimpy.cgmes_v2_4_15.WindQcontrolModesKind.WindQcontrolModesKind
+
+   General wind turbine Q control modes .
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

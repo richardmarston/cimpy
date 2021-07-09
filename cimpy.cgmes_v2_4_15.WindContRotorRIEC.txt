@@ -1,0 +1,94 @@
+cimpy.cgmes_v2_4_15.WindContRotorRIEC module
+********************************************
+
+class cimpy.cgmes_v2_4_15.WindContRotorRIEC.WindContRotorRIEC(kirr=0.0, komegafilt=0.0, kpfilt=0.0, kprr=0.0, rmax=0.0, rmin=0.0, tomegafilt=0, tpfilt=0, WindDynamicsLookupTable='list', WindGenTurbineType2IEC=None, *args, **kw_args)
+
+      Rotor resistance control model.  Reference: IEC Standard
+      61400-27-1 Section 6.6.5.2.
+
+      kirr:
+         Integral gain in rotor resistance PI controller (). It is
+         type dependent parameter. Default: 0.0
+
+      komegafilt:
+         Filter gain for generator speed measurement (K). It is type
+         dependent parameter. Default: 0.0
+
+      kpfilt:
+         Filter gain for power measurement (). It is type dependent
+         parameter. Default: 0.0
+
+      kprr:
+         Proportional gain in rotor resistance PI controller (). It is
+         type dependent parameter. Default: 0.0
+
+      rmax:
+         Maximum rotor resistance (). It is type dependent parameter.
+         Default: 0.0
+
+      rmin:
+         Minimum rotor resistance (). It is type dependent parameter.
+         Default: 0.0
+
+      tomegafilt:
+         Filter time constant for generator speed measurement (). It
+         is type dependent parameter. Default: 0
+
+      tpfilt:
+         Filter time constant for power measurement (). It is type
+         dependent parameter. Default: 0
+
+      WindDynamicsLookupTable:
+         The wind dynamics lookup table associated with this rotor
+         resistance control model. Default: "list"
+
+      WindGenTurbineType2IEC:
+         Wind turbine type 2 model with whitch this wind control rotor
+         resistance model is associated. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

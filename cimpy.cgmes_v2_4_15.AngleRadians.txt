@@ -1,0 +1,23 @@
+cimpy.cgmes_v2_4_15.AngleRadians module
+***************************************
+
+class cimpy.cgmes_v2_4_15.AngleRadians.AngleRadians(value=0.0, unit=None, multiplier=None)
+
+   Phase angle in radians.
+
+   Value:
+      Default: 0.0
+
+   Unit:
+      Default: None
+
+   Multiplier:
+      Default: None
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

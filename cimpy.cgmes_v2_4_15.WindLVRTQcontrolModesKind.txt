@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.WindLVRTQcontrolModesKind module
+****************************************************
+
+class cimpy.cgmes_v2_4_15.WindLVRTQcontrolModesKind.WindLVRTQcontrolModesKind
+
+   LVRT Q control modes .
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

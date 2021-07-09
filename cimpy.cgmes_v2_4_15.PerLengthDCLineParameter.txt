@@ -1,0 +1,27 @@
+cimpy.cgmes_v2_4_15.PerLengthDCLineParameter module
+***************************************************
+
+class cimpy.cgmes_v2_4_15.PerLengthDCLineParameter.PerLengthDCLineParameter(DCLineSegments='list', capacitance=0.0, inductance=0.0, resistance=0.0)
+
+   DCLineSegments:
+      All line segments described by this set of per-length
+      parameters. Default: "list"
+
+   Capacitance:
+      Capacitance per unit of length of the DC line segment;
+      significant for cables only. Default: 0.0
+
+   Inductance:
+      Inductance per unit of length of the DC line segment. Default:
+      0.0
+
+   Resistance:
+      Resistance per length of the DC line segment. Default: 0.0
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

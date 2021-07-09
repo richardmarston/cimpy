@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.UnitMultiplier module
+*****************************************
+
+class cimpy.cgmes_v2_4_15.UnitMultiplier.UnitMultiplier
+
+   The unit multipliers defined for the CIM.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

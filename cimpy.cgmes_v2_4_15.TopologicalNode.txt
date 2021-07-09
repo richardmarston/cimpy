@@ -1,0 +1,166 @@
+cimpy.cgmes_v2_4_15.TopologicalNode module
+******************************************
+
+class cimpy.cgmes_v2_4_15.TopologicalNode.TopologicalNode(SvInjection=None, SvVoltage=None, AngleRefTopologicalIsland=None, TopologicalIsland=None, BaseVoltage=None, ConnectivityNodes='list', ConnectivityNodeContainer=None, ReportingGroup=None, Terminal='list', boundaryPoint=False, fromEndIsoCode='', fromEndName='', fromEndNameTso='', toEndIsoCode='', toEndName='', toEndNameTso='', *args, **kw_args)
+
+      For a detailed substation model a topological node is a set of
+      connectivity nodes that, in the current network state, are
+      connected together through any type of closed switches,
+      including  jumpers. Topological nodes change as the current
+      network state changes (i.e., switches, breakers, etc. change
+      state). For a planning model, switch statuses are not used to
+      form topological nodes. Instead they are manually created or
+      deleted in a model builder tool. Topological nodes maintained
+      this way are also called "busses".
+
+      SvInjection:
+         The topological node associated with the flow injection state
+         variable. Default: None
+
+      SvVoltage:
+         The topological node associated with the voltage state.
+         Default: None
+
+      AngleRefTopologicalIsland:
+         The island for which the node is an angle reference.
+         Normally there is one angle reference node for each island.
+         Default: None
+
+      TopologicalIsland:
+         A topological node belongs to a topological island. Default:
+         None
+
+      BaseVoltage:
+         The base voltage of the topologocial node. Default: None
+
+      ConnectivityNodes:
+         The topological node to which this connectivity node is
+         assigned.  May depend on the current state of switches in the
+         network. Default: "list"
+
+      ConnectivityNodeContainer:
+         The connectivity node container to which the toplogical node
+         belongs. Default: None
+
+      ReportingGroup:
+         The topological nodes that belong to the reporting group.
+         Default: None
+
+      Terminal:
+         The topological node associated with the terminal.   This can
+         be used as an alternative to the connectivity node path to
+         topological node, thus making it unneccesary to model
+         connectivity nodes in some cases.   Note that the if
+         connectivity nodes are in the model, this association would
+         probably not be used as an input specification. Default:
+         "list"
+
+      boundaryPoint:
+         Identifies if a node is a BoundaryPoint. If
+         boundaryPoint=true the ConnectivityNode or the
+         TopologicalNode represents a BoundaryPoint. Default: False
+
+      fromEndIsoCode:
+         The attribute is used for an exchange of the ISO code of the
+         region to which the *From* side of the Boundary point belongs
+         to or it is connected to. The ISO code is two characters
+         country code as defined by ISO 3166 (). The length of the
+         string is 2 characters maximum. The attribute is a required
+         for the Boundary Model Authority Set where this attribute is
+         used only for the TopologicalNode in the Boundary Topology
+         profile and ConnectivityNode in the Boundary Equipment
+         profile. Default: ''
+
+      fromEndName:
+         The attribute is used for an exchange of a human readable
+         name with length of the string 32 characters maximum. The
+         attribute covers two cases:  The attribute is required for
+         the Boundary Model Authority Set where it is used only for
+         the TopologicalNode in the Boundary Topology profile and
+         ConnectivityNode in the Boundary Equipment profile. Default:
+         ''
+
+      fromEndNameTso:
+         The attribute is used for an exchange of the name of the TSO
+         to which the *From* side of the Boundary point belongs to or
+         it is connected to. The length of the string is 32 characters
+         maximum. The attribute is required for the Boundary Model
+         Authority Set where it is used only for the TopologicalNode
+         in the Boundary Topology profile and ConnectivityNode in the
+         Boundary Equipment profile. Default: ''
+
+      toEndIsoCode:
+         The attribute is used for an exchange of the ISO code of the
+         region to which the *To* side of the Boundary point belongs
+         to or it is connected to. The ISO code is two characters
+         country code as defined by ISO 3166 (). The length of the
+         string is 2 characters maximum. The attribute is a required
+         for the Boundary Model Authority Set where this attribute is
+         used only for the TopologicalNode in the Boundary Topology
+         profile and ConnectivityNode in the Boundary Equipment
+         profile. Default: ''
+
+      toEndName:
+         The attribute is used for an exchange of a human readable
+         name with length of the string 32 characters maximum. The
+         attribute covers two cases:  The attribute is required for
+         the Boundary Model Authority Set where it is used only for
+         the TopologicalNode in the Boundary Topology profile and
+         ConnectivityNode in the Boundary Equipment profile. Default:
+         ''
+
+      toEndNameTso:
+         The attribute is used for an exchange of the name of the TSO
+         to which the *To* side of the Boundary point belongs to or it
+         is connected to. The length of the string is 32 characters
+         maximum. The attribute is required for the Boundary Model
+         Authority Set where it is used only for the TopologicalNode
+         in the Boundary Topology profile and ConnectivityNode in the
+         Boundary Equipment profile. Default: ''
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

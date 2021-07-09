@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.Boolean module
+**********************************
+
+class cimpy.cgmes_v2_4_15.Boolean.Boolean
+
+   A type with the value space "true" and "false".
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

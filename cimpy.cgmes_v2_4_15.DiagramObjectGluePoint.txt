@@ -1,0 +1,20 @@
+cimpy.cgmes_v2_4_15.DiagramObjectGluePoint module
+*************************************************
+
+class cimpy.cgmes_v2_4_15.DiagramObjectGluePoint.DiagramObjectGluePoint(DiagramObjectPoints='list')
+
+   This is used for grouping diagram object points from different
+   diagram objects that are considered to be glued together in a
+   diagram even if they are not at the exact same coordinates.
+
+   DiagramObjectPoints:
+      The *glue* point to which this point is associated. Default:
+      "list"
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

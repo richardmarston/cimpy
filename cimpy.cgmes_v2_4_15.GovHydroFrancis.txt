@@ -1,0 +1,187 @@
+cimpy.cgmes_v2_4_15.GovHydroFrancis module
+******************************************
+
+class cimpy.cgmes_v2_4_15.GovHydroFrancis.GovHydroFrancis(am=0.0, av0=0.0, av1=0.0, bp=0.0, db1=0.0, etamax=0.0, governorControl=None, h1=0.0, h2=0.0, hn=0.0, kc=0.0, kg=0.0, kt=0.0, qc0=0.0, qn=0.0, ta=0, td=0, ts=0, twnc=0, twng=0, tx=0, va=0.0, valvmax=0.0, valvmin=0.0, vc=0.0, waterTunnelSurgeChamberSimulation=False, zsfc=0.0, *args, **kw_args)
+
+      Detailed hydro unit - Francis model.  This model can be used to
+      represent three types of governors. A schematic of the hydraulic
+      system of detailed hydro unit models, like Francis and Pelton,
+      is provided in the DetailedHydroModelHydraulicSystem diagram.
+
+      am:
+         Opening section S at the maximum efficiency (Am).  Typical
+         Value = 0.7. Default: 0.0
+
+      av0:
+         Area of the surge tank (A). Unit = m. Typical Value = 30.
+         Default: 0.0
+
+      av1:
+         Area of the compensation tank (A). Unit = m. Typical Value =
+         700. Default: 0.0
+
+      bp:
+         Droop (Bp).  Typical Value = 0.05. Default: 0.0
+
+      db1:
+         Intentional dead-band width (DB1).  Unit = Hz.  Typical Value
+         = 0. Default: 0.0
+
+      etamax:
+         Maximum efficiency (EtaMax).  Typical Value = 1.05. Default:
+         0.0
+
+      governorControl:
+         Governor control flag (Cflag).  Typical Value =
+         mechanicHydrolicTachoAccelerator. Default: None
+
+      h1:
+         Head of compensation chamber water level with respect to the
+         level of penstock (H).  Unit = m. Typical Value = 4. Default:
+         0.0
+
+      h2:
+         Head of surge tank water level with respect to the level of
+         penstock (H).  Unit = m. Typical Value = 40. Default: 0.0
+
+      hn:
+         Rated hydraulic head (H).  Unit = m. Typical Value = 250.
+         Default: 0.0
+
+      kc:
+         Penstock loss coefficient (due to friction) (Kc).  Typical
+         Value = 0.025. Default: 0.0
+
+      kg:
+         Water tunnel and surge chamber loss coefficient (due to
+         friction) (Kg).  Typical Value = 0.025. Default: 0.0
+
+      kt:
+         Washout gain (Kt).  Typical Value = 0.25. Default: 0.0
+
+      qc0:
+         No-load turbine flow at nominal head (Qc0).  Typical Value =
+         0.21. Default: 0.0
+
+      qn:
+         Rated flow (Q). Unit = m/s. Typical Value = 40. Default: 0.0
+
+      ta:
+         Derivative gain (Ta).  Typical Value = 3. Default: 0
+
+      td:
+         Washout time constant (Td).  Typical Value = 3. Default: 0
+
+      ts:
+         Gate servo time constant (Ts).  Typical Value = 0.5. Default:
+         0
+
+      twnc:
+         Water inertia time constant (Twnc).  Typical Value = 1.
+         Default: 0
+
+      twng:
+         Water tunnel and surge chamber inertia time constant (Twng).
+         Typical Value = 3. Default: 0
+
+      tx:
+         Derivative feedback gain (Tx).  Typical Value = 1. Default: 0
+
+      va:
+         Maximum gate opening velocity (Va).  Unit = PU/sec.  Typical
+         Value = 0.011. Default: 0.0
+
+      valvmax:
+         Maximum gate opening (ValvMax).  Typical Value = 1. Default:
+         0.0
+
+      valvmin:
+         Minimum gate opening (ValvMin).  Typical Value = 0. Default:
+         0.0
+
+      vc:
+         Maximum gate closing velocity (Vc).  Unit = PU/sec.  Typical
+         Value = -0.011. Default: 0.0
+
+      waterTunnelSurgeChamberSimulation:
+         Water tunnel and surge chamber simulation (Tflag). true =
+         enable of water tunnel and surge chamber simulation false =
+         inhibit of water tunnel and surge chamber simulation. Typical
+         Value = false. Default: False
+
+      zsfc:
+         Head of upper water level with respect to the level of
+         penstock (Zsfc).  Unit = m.  Typical Value = 25. Default: 0.0
+
+   Documentation of parent class TurbineGovernorDynamics:
+
+      Turbine-governor function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Turbine-governor model associated with this synchronous
+         machine model. Default: "list"
+
+      AsynchronousMachineDynamics:
+         Asynchronous machine model with which this turbine-governor
+         model is associated. Default: None
+
+      TurbineLoadControllerDynamics:
+         Turbine load controller providing input to this turbine-
+         governor. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

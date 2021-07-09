@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.ExcST6BOELselectorKind module
+*************************************************
+
+class cimpy.cgmes_v2_4_15.ExcST6BOELselectorKind.ExcST6BOELselectorKind
+
+   Type of connection for the OEL input used for static excitation
+   systems type 6B.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

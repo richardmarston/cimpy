@@ -1,0 +1,99 @@
+cimpy.cgmes_v2_4_15.WindProtectionIEC module
+********************************************
+
+class cimpy.cgmes_v2_4_15.WindProtectionIEC.WindProtectionIEC(fover=0.0, funder=0.0, tfover=0, tfunder=0, tuover=0, tuunder=0, uover=0.0, uunder=0.0, WindTurbineType3or4IEC=None, WindTurbineType1or2IEC=None, *args, **kw_args)
+
+      The grid protection model includes protection against over and
+      under voltage, and against over and under frequency.  Reference:
+      IEC Standard 614000-27-1 Section 6.6.6.
+
+      fover:
+         Set of wind turbine over frequency protection levels (). It
+         is project dependent parameter. Default: 0.0
+
+      funder:
+         Set of wind turbine under frequency protection levels (). It
+         is project dependent parameter. Default: 0.0
+
+      tfover:
+         Set of corresponding wind turbine over frequency protection
+         disconnection times (). It is project dependent parameter.
+         Default: 0
+
+      tfunder:
+         Set of corresponding wind turbine under frequency protection
+         disconnection times (). It is project dependent parameter.
+         Default: 0
+
+      tuover:
+         Set of corresponding wind turbine over voltage protection
+         disconnection times (). It is project dependent parameter.
+         Default: 0
+
+      tuunder:
+         Set of corresponding wind turbine under voltage protection
+         disconnection times (). It is project dependent parameter.
+         Default: 0
+
+      uover:
+         Set of wind turbine over voltage protection levels (). It is
+         project dependent parameter. Default: 0.0
+
+      uunder:
+         Set of wind turbine under voltage protection levels (). It is
+         project dependent parameter. Default: 0.0
+
+      WindTurbineType3or4IEC:
+         Wind generator type 3 or 4 model with which this wind turbine
+         protection model is associated. Default: None
+
+      WindTurbineType1or2IEC:
+         Wind generator type 1 or 2 model with which this wind turbine
+         protection model is associated. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

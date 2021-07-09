@@ -1,0 +1,83 @@
+cimpy.cgmes_v2_4_15.WindDynamicsLookupTable module
+**************************************************
+
+class cimpy.cgmes_v2_4_15.WindDynamicsLookupTable.WindDynamicsLookupTable(WindContCurrLimIEC=None, WindContPType3IEC=None, WindContRotorRIEC=None, input=0.0, lookupTableFunctionType=None, output=0.0, sequence=0, WindPlantFreqPcontrolIEC=None, *args, **kw_args)
+
+      The class models a look up table for the purpose of wind
+      standard models.
+
+      WindContCurrLimIEC:
+         The wind dynamics lookup table associated with this current
+         control limitation model. Default: None
+
+      WindContPType3IEC:
+         The wind dynamics lookup table associated with this P control
+         type 3 model. Default: None
+
+      WindContRotorRIEC:
+         The rotor resistance control model with which this wind
+         dynamics lookup table is associated. Default: None
+
+      input:
+         Input value (x) for the lookup table function. Default: 0.0
+
+      lookupTableFunctionType:
+         Type of the lookup table function. Default: None
+
+      output:
+         Output value (y) for the lookup table function. Default: 0.0
+
+      sequence:
+         Sequence numbers of the pairs of the input (x) and the output
+         (y) of the lookup table function. Default: 0
+
+      WindPlantFreqPcontrolIEC:
+         The wind dynamics lookup table associated with this frequency
+         and active power wind plant model. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,98 @@
+cimpy.cgmes_v2_4_15.VAdjIEEE module
+***********************************
+
+class cimpy.cgmes_v2_4_15.VAdjIEEE.VAdjIEEE(vadjf=0.0, adjslew=0.0, vadjmax=0.0, vadjmin=0.0, taon=0, taoff=0, *args, **kw_args)
+
+      The class represents IEEE Voltage Adjuster which is used to
+      represent the voltage adjuster in either a power factor or var
+      control system.  Reference: IEEE Standard 421.5-2005 Section
+      11.1.
+
+      vadjf:
+         Set high to provide a continuous raise or lower (). Default:
+         0.0
+
+      adjslew:
+         Rate at which output of adjuster changes ().  Unit = sec./PU.
+         Typical Value = 300. Default: 0.0
+
+      vadjmax:
+         Maximum output of the adjuster ().  Typical Value = 1.1.
+         Default: 0.0
+
+      vadjmin:
+         Minimum output of the adjuster ().  Typical Value = 0.9.
+         Default: 0.0
+
+      taon:
+         Time that adjuster pulses are on ().  Typical Value = 0.1.
+         Default: 0
+
+      taoff:
+         Time that adjuster pulses are off ().  Typical Value = 0.5.
+         Default: 0
+
+   Documentation of parent class VoltageAdjusterDynamics:
+
+      Voltage adjuster function block whose behaviour is described by
+      reference to a standard model
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model with which this
+         voltage adjuster is associated. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,36 @@
+cimpy.cgmes_v2_4_15.NonlinearShuntCompensatorPoint module
+*********************************************************
+
+class cimpy.cgmes_v2_4_15.NonlinearShuntCompensatorPoint.NonlinearShuntCompensatorPoint(NonlinearShuntCompensator=None, b=0.0, g=0.0, sectionNumber=0, b0=0.0, g0=0.0)
+
+   A non linear shunt compensator bank or section admittance value.
+
+   NonlinearShuntCompensator:
+      Non-linear shunt compensator owning this point. Default: None
+
+   B:
+      Positive sequence shunt (charging) susceptance per section
+      Default: 0.0
+
+   G:
+      Positive sequence shunt (charging) conductance per section
+      Default: 0.0
+
+   SectionNumber:
+      The number of the section. Default: 0
+
+   B0:
+      Zero sequence shunt (charging) susceptance per section Default:
+      0.0
+
+   G0:
+      Zero sequence shunt (charging) conductance per section Default:
+      0.0
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

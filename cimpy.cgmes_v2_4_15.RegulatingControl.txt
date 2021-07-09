@@ -1,0 +1,124 @@
+cimpy.cgmes_v2_4_15.RegulatingControl module
+********************************************
+
+class cimpy.cgmes_v2_4_15.RegulatingControl.RegulatingControl(Terminal=None, RegulatingCondEq='list', mode=None, RegulationSchedule='list', discrete=False, enabled=False, targetDeadband=0.0, targetValue=0.0, targetValueUnitMultiplier=None, *args, **kw_args)
+
+      Specifies a set of equipment that works together to control a
+      power system quantity such as voltage or flow.  Remote bus
+      voltage control is possible by specifying the controlled
+      terminal located at some place remote from the controlling
+      equipment. In case multiple equipment, possibly of different
+      types, control same terminal there must be only one
+      RegulatingControl at that terminal. The most specific subtype of
+      RegulatingControl shall be used in case such equipment
+      participate in the control, e.g. TapChangerControl for tap
+      changers. For flow control  load sign convention is used, i.e.
+      positive sign means flow out from a TopologicalNode (bus) into
+      the conducting equipment.
+
+      Terminal:
+         The controls regulating this terminal. Default: None
+
+      RegulatingCondEq:
+         The equipment that participates in this regulating control
+         scheme. Default: "list"
+
+      mode:
+         The regulating control mode presently available.  This
+         specification allows for determining the kind of regulation
+         without need for obtaining the units from a schedule.
+         Default: None
+
+      RegulationSchedule:
+         Schedule for this Regulating regulating control. Default:
+         "list"
+
+      discrete:
+         The regulation is performed in a discrete mode. This applies
+         to equipment with discrete controls, e.g. tap changers and
+         shunt compensators. Default: False
+
+      enabled:
+         The flag tells if regulation is enabled. Default: False
+
+      targetDeadband:
+         This is a deadband used with discrete control to avoid
+         excessive update of controls like tap changers and shunt
+         compensator banks while regulating. The units of those
+         appropriate for the mode. Default: 0.0
+
+      targetValue:
+         The target value specified for case input.   This value can
+         be used for the target value without the use of schedules.
+         The value has the units appropriate to the mode attribute.
+         Default: 0.0
+
+      targetValueUnitMultiplier:
+         Specify the multiplier for used for the targetValue. Default:
+         None
+
+   Documentation of parent class PowerSystemResource:
+
+      A power system resource can be an item of equipment such as a
+      switch, an equipment container containing many individual items
+      of equipment such as a substation, or an organisational entity
+      such as sub-control area. Power system resources can have
+      measurements associated.
+
+      Controls:
+         Regulating device governed by this control output. Default:
+         "list"
+
+      Measurements:
+         The power system resource that contains the measurement.
+         Default: "list"
+
+      Location:
+         Location of this power system resource. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

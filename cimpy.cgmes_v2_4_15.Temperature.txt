@@ -1,0 +1,23 @@
+cimpy.cgmes_v2_4_15.Temperature module
+**************************************
+
+class cimpy.cgmes_v2_4_15.Temperature.Temperature(multiplier=None, unit=None, value=0.0)
+
+   Value of temperature in degrees Celsius.
+
+   Multiplier:
+      Default: None
+
+   Unit:
+      Default: None
+
+   Value:
+      Default: 0.0
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

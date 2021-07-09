@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.InputSignalKind module
+******************************************
+
+class cimpy.cgmes_v2_4_15.InputSignalKind.InputSignalKind
+
+   Input signal type.  In Dynamics modelling, commonly represented by
+   j parameter.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

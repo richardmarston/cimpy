@@ -1,0 +1,180 @@
+cimpy.cgmes_v2_4_15.ExcIEEEAC1A module
+**************************************
+
+class cimpy.cgmes_v2_4_15.ExcIEEEAC1A.ExcIEEEAC1A(tb=0, tc=0, ka=0.0, ta=0, vamax=0.0, vamin=0.0, te=0, kf=0.0, tf=0, kc=0.0, kd=0.0, ke=0.0, ve1=0.0, seve1=0.0, ve2=0.0, seve2=0.0, vrmax=0.0, vrmin=0.0, *args, **kw_args)
+
+      The class represents IEEE Std 421.5-2005 type AC1A model. The
+      model represents the field-controlled alternator-rectifier
+      excitation systems designated Type AC1A. These excitation
+      systems consist of an alternator main exciter with non-
+      controlled rectifiers.  Reference: IEEE Standard 421.5-2005
+      Section 6.1.
+
+      tb:
+         Voltage regulator time constant (T).  Typical Value = 0.
+         Default: 0
+
+      tc:
+         Voltage regulator time constant (T).  Typical Value = 0.
+         Default: 0
+
+      ka:
+         Voltage regulator gain (K).  Typical Value = 400. Default:
+         0.0
+
+      ta:
+         Voltage regulator time constant (T).  Typical Value = 0.02.
+         Default: 0
+
+      vamax:
+         Maximum voltage regulator output (V).  Typical Value = 14.5.
+         Default: 0.0
+
+      vamin:
+         Minimum voltage regulator output (V).  Typical Value = -14.5.
+         Default: 0.0
+
+      te:
+         Exciter time constant, integration rate associated with
+         exciter control (T).  Typical Value = 0.8. Default: 0
+
+      kf:
+         Excitation control system stabilizer gains (K).  Typical
+         Value = 0.03. Default: 0.0
+
+      tf:
+         Excitation control system stabilizer time constant (T).
+         Typical Value = 1. Default: 0
+
+      kc:
+         Rectifier loading factor proportional to commutating
+         reactance (K).  Typical Value = 0.2. Default: 0.0
+
+      kd:
+         Demagnetizing factor, a function of exciter alternator
+         reactances (K).  Typical Value = 0.38. Default: 0.0
+
+      ke:
+         Exciter constant related to self-excited field (K).  Typical
+         Value = 1. Default: 0.0
+
+      ve1:
+         Exciter alternator output voltages back of commutating
+         reactance at which saturation is defined (V).  Typical Value
+         = 4.18. Default: 0.0
+
+      seve1:
+         Exciter saturation function value at the corresponding
+         exciter voltage, V, back of commutating reactance (S[V]).
+         Typical Value = 0.1. Default: 0.0
+
+      ve2:
+         Exciter alternator output voltages back of commutating
+         reactance at which saturation is defined (V).  Typical Value
+         = 3.14. Default: 0.0
+
+      seve2:
+         Exciter saturation function value at the corresponding
+         exciter voltage, V, back of commutating reactance (S[V]).
+         Typical Value = 0.03. Default: 0.0
+
+      vrmax:
+         Maximum voltage regulator outputs (V).  Typical Value = 6.03.
+         Default: 0.0
+
+      vrmin:
+         Minimum voltage regulator outputs (V).  Typical Value =
+         -5.43. Default: 0.0
+
+   Documentation of parent class ExcitationSystemDynamics:
+
+      Excitation system function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Synchronous machine model with which this excitation system
+         model is associated. Default: None
+
+      PowerSystemStabilizerDynamics:
+         Power system stabilizer model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model associated with
+         this excitation system model. Default: None
+
+      VoltageCompensatorDynamics:
+         Voltage compensator model associated with this excitation
+         system model. Default: None
+
+      DiscontinuousExcitationControlDynamics:
+         Discontinuous excitation control model associated with this
+         excitation system model. Default: None
+
+      UnderexcitationLimiterDynamics:
+         Undrexcitation limiter model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType2Dynamics:
+         Power Factor or VAr controller Type II model associated with
+         this excitation system model. Default: None
+
+      OverexcitationLimiterDynamics:
+         Overexcitation limiter model associated with this excitation
+         system model. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

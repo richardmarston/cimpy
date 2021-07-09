@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.TransformerControlMode module
+*************************************************
+
+class cimpy.cgmes_v2_4_15.TransformerControlMode.TransformerControlMode
+
+   Control modes for a transformer.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

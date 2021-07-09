@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.WindGenUnitKind module
+******************************************
+
+class cimpy.cgmes_v2_4_15.WindGenUnitKind.WindGenUnitKind
+
+   Kind of wind generating unit.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

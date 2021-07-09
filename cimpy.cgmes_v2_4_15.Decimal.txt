@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.Decimal module
+**********************************
+
+class cimpy.cgmes_v2_4_15.Decimal.Decimal
+
+   Decimal is the base-10 notational system for representing real
+   numbers.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

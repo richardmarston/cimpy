@@ -1,0 +1,221 @@
+cimpy.cgmes_v2_4_15.EquivalentBranch module
+*******************************************
+
+class cimpy.cgmes_v2_4_15.EquivalentBranch.EquivalentBranch(r=0.0, r21=0.0, x=0.0, x21=0.0, negativeR12=0.0, negativeR21=0.0, negativeX12=0.0, negativeX21=0.0, positiveR12=0.0, positiveR21=0.0, positiveX12=0.0, positiveX21=0.0, zeroR12=0.0, zeroR21=0.0, zeroX12=0.0, zeroX21=0.0, *args, **kw_args)
+
+      The class represents equivalent branches.
+
+      r:
+         Positive sequence series resistance of the reduced branch.
+         Default: 0.0
+
+      r21:
+         Resistance from terminal sequence 2 to terminal sequence 1
+         .Used for steady state power flow. This attribute is optional
+         and represent unbalanced network such as off-nominal phase
+         shifter. If only EquivalentBranch.r is given, then
+         EquivalentBranch.r21 is assumed equal to EquivalentBranch.r.
+         Usage rule : EquivalentBranch is a result of network
+         reduction prior to the data exchange. Default: 0.0
+
+      x:
+         Positive sequence series reactance of the reduced branch.
+         Default: 0.0
+
+      x21:
+         Reactance from terminal sequence 2 to terminal sequence 1
+         .Used for steady state power flow. This attribute is optional
+         and represent unbalanced network such as off-nominal phase
+         shifter. If only EquivalentBranch.x is given, then
+         EquivalentBranch.x21 is assumed equal to EquivalentBranch.x.
+         Usage rule : EquivalentBranch is a result of network
+         reduction prior to the data exchange. Default: 0.0
+
+      negativeR12:
+         Negative sequence series resistance from terminal sequence  1
+         to terminal sequence 2. Used for short circuit data exchange
+         according to IEC 60909 EquivalentBranch is a result of
+         network reduction prior to the data exchange Default: 0.0
+
+      negativeR21:
+         Negative sequence series resistance from terminal sequence 2
+         to terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909 EquivalentBranch is a result of
+         network reduction prior to the data exchange Default: 0.0
+
+      negativeX12:
+         Negative sequence series reactance from terminal sequence  1
+         to terminal sequence 2. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      negativeX21:
+         Negative sequence series reactance from terminal sequence 2
+         to terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909. Usage: EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      positiveR12:
+         Positive sequence series resistance from terminal sequence  1
+         to terminal sequence 2 . Used for short circuit data exchange
+         according to IEC 60909.  EquivalentBranch is a result of
+         network reduction prior to the data exchange. Default: 0.0
+
+      positiveR21:
+         Positive sequence series resistance from terminal sequence 2
+         to terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909 EquivalentBranch is a result of
+         network reduction prior to the data exchange Default: 0.0
+
+      positiveX12:
+         Positive sequence series reactance from terminal sequence  1
+         to terminal sequence 2. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      positiveX21:
+         Positive sequence series reactance from terminal sequence 2
+         to terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      zeroR12:
+         Zero sequence series resistance from terminal sequence  1 to
+         terminal sequence 2. Used for short circuit data exchange
+         according to IEC 60909 EquivalentBranch is a result of
+         network reduction prior to the data exchange Default: 0.0
+
+      zeroR21:
+         Zero sequence series resistance from terminal sequence  2 to
+         terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      zeroX12:
+         Zero sequence series reactance from terminal sequence  1 to
+         terminal sequence 2. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+      zeroX21:
+         Zero sequence series reactance from terminal sequence 2 to
+         terminal sequence 1. Used for short circuit data exchange
+         according to IEC 60909 Usage : EquivalentBranch is a result
+         of network reduction prior to the data exchange Default: 0.0
+
+   Documentation of parent class EquivalentEquipment:
+
+      The class represents equivalent objects that are the result of a
+      network reduction. The class is the base for equivalent objects
+      of different types.
+
+      EquivalentNetwork:
+         The associated reduced equivalents. Default: None
+
+   Documentation of parent class ConductingEquipment:
+
+      The parts of the AC power system that are designed to carry
+      current or that are conductively connected through terminals.
+
+      BaseVoltage:
+         All conducting equipment with this base voltage.  Use only
+         when there is no voltage level container used and only one
+         base voltage applies.  For example, not used for
+         transformers. Default: None
+
+      Terminals:
+         Conducting equipment have terminals that may be connected to
+         other conducting equipment terminals via connectivity nodes
+         or topological nodes. Default: "list"
+
+      SvStatus:
+         The status state variable associated with this conducting
+         equipment. Default: None
+
+   Documentation of parent class Equipment:
+
+      The parts of a power system that are physical devices,
+      electronic or mechanical.
+
+      aggregate:
+         The single instance of equipment represents multiple pieces
+         of equipment that have been modeled together as an aggregate.
+         Examples would be power transformers or synchronous machines
+         operating in parallel modeled as a single aggregate power
+         transformer or aggregate synchronous machine.  This is not to
+         be used to indicate equipment that is part of a group of
+         interdependent equipment produced by a network production
+         program. Default: False
+
+      EquipmentContainer:
+         Container of this equipment. Default: None
+
+      OperationalLimitSet:
+         The operational limit sets associated with this equipment.
+         Default: "list"
+
+   Documentation of parent class PowerSystemResource:
+
+      A power system resource can be an item of equipment such as a
+      switch, an equipment container containing many individual items
+      of equipment such as a substation, or an organisational entity
+      such as sub-control area. Power system resources can have
+      measurements associated.
+
+      Controls:
+         Regulating device governed by this control output. Default:
+         "list"
+
+      Measurements:
+         The power system resource that contains the measurement.
+         Default: "list"
+
+      Location:
+         Location of this power system resource. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

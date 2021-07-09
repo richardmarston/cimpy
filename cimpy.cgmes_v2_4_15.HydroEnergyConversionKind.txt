@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.HydroEnergyConversionKind module
+****************************************************
+
+class cimpy.cgmes_v2_4_15.HydroEnergyConversionKind.HydroEnergyConversionKind
+
+   Specifies the capability of the hydro generating unit to convert
+   energy as a generator or pump.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

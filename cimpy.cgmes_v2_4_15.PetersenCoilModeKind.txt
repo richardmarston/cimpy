@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.PetersenCoilModeKind module
+***********************************************
+
+class cimpy.cgmes_v2_4_15.PetersenCoilModeKind.PetersenCoilModeKind
+
+   The mode of operation for a Petersen coil.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,29 @@
+cimpy.cgmes_v2_4_15.ActivePowerPerFrequency module
+**************************************************
+
+class cimpy.cgmes_v2_4_15.ActivePowerPerFrequency.ActivePowerPerFrequency(denominatorMultiplier=None, denominatorUnit=None, multiplier=None, unit=None, value=0.0)
+
+   Active power variation with frequency.
+
+   DenominatorMultiplier:
+      Default: None
+
+   DenominatorUnit:
+      Default: None
+
+   Multiplier:
+      Default: None
+
+   Unit:
+      Default: None
+
+   Value:
+      Default: 0.0
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

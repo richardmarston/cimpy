@@ -1,0 +1,23 @@
+cimpy.cgmes_v2_4_15.SvShuntCompensatorSections module
+*****************************************************
+
+class cimpy.cgmes_v2_4_15.SvShuntCompensatorSections.SvShuntCompensatorSections(sections=0.0, ShuntCompensator=None)
+
+   State variable for the number of sections in service for a shunt
+   compensator.
+
+   Sections:
+      The number of sections in service as a continous variable. To
+      get integer value scale with ShuntCompensator.bPerSection.
+      Default: 0.0
+
+   ShuntCompensator:
+      The shunt compensator for which the state applies. Default: None
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

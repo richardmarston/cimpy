@@ -1,0 +1,98 @@
+cimpy.cgmes_v2_4_15.WindContPitchAngleIEC module
+************************************************
+
+class cimpy.cgmes_v2_4_15.WindContPitchAngleIEC.WindContPitchAngleIEC(dthetamax=0.0, dthetamin=0.0, kic=0.0, kiomega=0.0, kpc=0.0, kpomega=0.0, kpx=0.0, thetamax=0.0, thetamin=0.0, ttheta=0, WindGenTurbineType3IEC=None, *args, **kw_args)
+
+      Pitch angle control model.  Reference: IEC Standard 61400-27-1
+      Section 6.6.5.8.
+
+      dthetamax:
+         Maximum pitch positive ramp rate (d). It is type dependent
+         parameter. Unit = degrees/sec. Default: 0.0
+
+      dthetamin:
+         Maximum pitch negative ramp rate (d). It is type dependent
+         parameter. Unit = degrees/sec. Default: 0.0
+
+      kic:
+         Power PI controller integration gain (). It is type dependent
+         parameter. Default: 0.0
+
+      kiomega:
+         Speed PI controller integration gain (). It is type dependent
+         parameter. Default: 0.0
+
+      kpc:
+         Power PI controller proportional gain (). It is type
+         dependent parameter. Default: 0.0
+
+      kpomega:
+         Speed PI controller proportional gain (). It is type
+         dependent parameter. Default: 0.0
+
+      kpx:
+         Pitch cross coupling gain (K). It is type dependent
+         parameter. Default: 0.0
+
+      thetamax:
+         Maximum pitch angle (). It is type dependent parameter.
+         Default: 0.0
+
+      thetamin:
+         Minimum pitch angle (). It is type dependent parameter.
+         Default: 0.0
+
+      ttheta:
+         Pitch time constant (t). It is type dependent parameter.
+         Default: 0
+
+      WindGenTurbineType3IEC:
+         Wind turbine type 3 model with which this pitch control model
+         is associated. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

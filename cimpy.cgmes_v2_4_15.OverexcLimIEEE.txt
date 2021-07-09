@@ -1,0 +1,102 @@
+cimpy.cgmes_v2_4_15.OverexcLimIEEE module
+*****************************************
+
+class cimpy.cgmes_v2_4_15.OverexcLimIEEE.OverexcLimIEEE(itfpu=0.0, ifdmax=0.0, ifdlim=0.0, hyst=0.0, kcd=0.0, kramp=0.0, *args, **kw_args)
+
+      The over excitation limiter model is intended to represent the
+      significant features of OELs necessary for some large-scale
+      system studies. It is the result of a pragmatic approach to
+      obtain a model that can be widely applied with attainable data
+      from generator owners. An attempt to include all variations in
+      the functionality of OELs and duplicate how they interact with
+      the rest of the excitation systems would likely result in a
+      level of application insufficient for the studies for which they
+      are intended.  Reference: IEEE OEL 421.5-2005 Section 9.
+
+      itfpu:
+         OEL timed field current limiter pickup level (I).  Typical
+         Value = 1.05. Default: 0.0
+
+      ifdmax:
+         OEL instantaneous field current limit (I).  Typical Value =
+         1.5. Default: 0.0
+
+      ifdlim:
+         OEL timed field current limit (I).  Typical Value = 1.05.
+         Default: 0.0
+
+      hyst:
+         OEL pickup/drop-out hysteresis (HYST).  Typical Value = 0.03.
+         Default: 0.0
+
+      kcd:
+         OEL cooldown gain (K).  Typical Value = 1. Default: 0.0
+
+      kramp:
+         OEL ramped limit rate (K).  Unit = PU/sec.  Typical Value =
+         10. Default: 0.0
+
+   Documentation of parent class OverexcitationLimiterDynamics:
+
+      Overexcitation limiter function block whose behaviour is
+      described by reference to a standard model
+
+      ExcitationSystemDynamics:
+         Excitation system model with which this overexcitation
+         limiter model is associated. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,107 @@
+cimpy.cgmes_v2_4_15.LoadGenericNonLinear module
+***********************************************
+
+class cimpy.cgmes_v2_4_15.LoadGenericNonLinear.LoadGenericNonLinear(genericNonLinearLoadModelType=None, pt=0.0, qt=0.0, tp=0, tq=0, ls=0.0, lt=0.0, bs=0.0, bt=0.0, *args, **kw_args)
+
+      These load models (known also as generic non-linear dynamic
+      (GNLD) load models) can be used in mid-term and long-term
+      voltage stability simulations (i.e., to study voltage collapse),
+      as they can replace a more detailed representation of aggregate
+      load, including induction motors, thermostatically controlled
+      and static loads.
+
+      genericNonLinearLoadModelType:
+         Type of generic non-linear load model. Default: None
+
+      pt:
+         Dynamic portion of active load (P). Default: 0.0
+
+      qt:
+         Dynamic portion of reactive load (Q). Default: 0.0
+
+      tp:
+         Time constant of lag function of active power (T). Default: 0
+
+      tq:
+         Time constant of lag function of reactive power (T). Default:
+         0
+
+      ls:
+         Steady state voltage index for active power (LS). Default:
+         0.0
+
+      lt:
+         Transient voltage index for active power (LT). Default: 0.0
+
+      bs:
+         Steady state voltage index for reactive power (BS). Default:
+         0.0
+
+      bt:
+         Transient voltage index for reactive power (BT). Default: 0.0
+
+   Documentation of parent class LoadDynamics:
+
+      Load whose behaviour is described by reference to a standard
+      model   A standard feature of dynamic load behaviour modelling
+      is the ability to associate the same behaviour to multiple
+      energy consumers by means of a single aggregate load definition.
+      Aggregate loads are used to represent all or part of the real
+      and reactive load from one or more loads in the static (power
+      flow) data. This load is usually the aggregation of many
+      individual load devices and the load model is approximate
+      representation of the aggregate response of the load devices to
+      system disturbances. The load model is always applied to
+      individual bus loads (energy consumers) but a single set of load
+      model parameters can used for all loads in the grouping.
+
+      EnergyConsumer:
+         Energy consumer to which this dynamics load model applies.
+         Default: "list"
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

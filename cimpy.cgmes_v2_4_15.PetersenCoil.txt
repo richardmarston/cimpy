@@ -1,0 +1,159 @@
+cimpy.cgmes_v2_4_15.PetersenCoil module
+***************************************
+
+class cimpy.cgmes_v2_4_15.PetersenCoil.PetersenCoil(mode=None, nominalU=0.0, offsetCurrent=0.0, positionCurrent=0.0, xGroundMax=0.0, xGroundMin=0.0, xGroundNominal=0.0, *args, **kw_args)
+
+      A tunable impedance device normally used to offset line charging
+      during single line faults in an ungrounded section of network.
+
+      mode:
+         The mode of operation of the Petersen coil. Default: None
+
+      nominalU:
+         The nominal voltage for which the coil is designed. Default:
+         0.0
+
+      offsetCurrent:
+         The offset current that the Petersen coil controller is
+         operating from the resonant point.  This is normally a fixed
+         amount for which the controller is configured and could be
+         positive or negative.  Typically 0 to 60 Amperes depending on
+         voltage and resonance conditions. Default: 0.0
+
+      positionCurrent:
+         The control current used to control the Petersen coil also
+         known as the position current.  Typically in the range of
+         20-200mA. Default: 0.0
+
+      xGroundMax:
+         The maximum reactance. Default: 0.0
+
+      xGroundMin:
+         The minimum reactance. Default: 0.0
+
+      xGroundNominal:
+         The nominal reactance.  This is the operating point (normally
+         over compensation) that is defined based on the resonance
+         point in the healthy network condition.  The impedance is
+         calculated based on nominal voltage divided by position
+         current. Default: 0.0
+
+   Documentation of parent class EarthFaultCompensator:
+
+      A conducting equipment used to represent a connection to ground
+      which is typically used to compensate earth faults..   An earth
+      fault compensator device modeled with a single terminal implies
+      a second terminal solidly connected to ground.  If two terminals
+      are modeled, the ground is not assumed and normal connection
+      rules apply.
+
+      r:
+         Nominal resistance of device. Default: 0.0
+
+   Documentation of parent class ConductingEquipment:
+
+      The parts of the AC power system that are designed to carry
+      current or that are conductively connected through terminals.
+
+      BaseVoltage:
+         All conducting equipment with this base voltage.  Use only
+         when there is no voltage level container used and only one
+         base voltage applies.  For example, not used for
+         transformers. Default: None
+
+      Terminals:
+         Conducting equipment have terminals that may be connected to
+         other conducting equipment terminals via connectivity nodes
+         or topological nodes. Default: "list"
+
+      SvStatus:
+         The status state variable associated with this conducting
+         equipment. Default: None
+
+   Documentation of parent class Equipment:
+
+      The parts of a power system that are physical devices,
+      electronic or mechanical.
+
+      aggregate:
+         The single instance of equipment represents multiple pieces
+         of equipment that have been modeled together as an aggregate.
+         Examples would be power transformers or synchronous machines
+         operating in parallel modeled as a single aggregate power
+         transformer or aggregate synchronous machine.  This is not to
+         be used to indicate equipment that is part of a group of
+         interdependent equipment produced by a network production
+         program. Default: False
+
+      EquipmentContainer:
+         Container of this equipment. Default: None
+
+      OperationalLimitSet:
+         The operational limit sets associated with this equipment.
+         Default: "list"
+
+   Documentation of parent class PowerSystemResource:
+
+      A power system resource can be an item of equipment such as a
+      switch, an equipment container containing many individual items
+      of equipment such as a substation, or an organisational entity
+      such as sub-control area. Power system resources can have
+      measurements associated.
+
+      Controls:
+         Regulating device governed by this control output. Default:
+         "list"
+
+      Measurements:
+         The power system resource that contains the measurement.
+         Default: "list"
+
+      Location:
+         Location of this power system resource. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

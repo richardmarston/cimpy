@@ -1,0 +1,93 @@
+cimpy.cgmes_v2_4_15.RemoteInputSignal module
+********************************************
+
+class cimpy.cgmes_v2_4_15.RemoteInputSignal.RemoteInputSignal(Terminal=None, remoteSignalType=None, PFVArControllerType1Dynamics=None, UnderexcitationLimiterDynamics=None, WindTurbineType1or2Dynamics=None, VoltageCompensatorDynamics=None, PowerSystemStabilizerDynamics=None, DiscontinuousExcitationControlDynamics=None, WindTurbineType3or4Dynamics=None, WindPlantDynamics=None, *args, **kw_args)
+
+      Supports connection to a terminal associated with a remote bus
+      from which an input signal of a specific type is coming.
+
+      Terminal:
+         Remote terminal with which this input signal is associated.
+         Default: None
+
+      remoteSignalType:
+         Type of input signal. Default: None
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model using this remote
+         input signal. Default: None
+
+      UnderexcitationLimiterDynamics:
+         Underexcitation limiter model using this remote input signal.
+         Default: None
+
+      WindTurbineType1or2Dynamics:
+         Wind generator Type 1 or Type 2 model using this remote input
+         signal. Default: None
+
+      VoltageCompensatorDynamics:
+         Voltage compensator model using this remote input signal.
+         Default: None
+
+      PowerSystemStabilizerDynamics:
+         Power system stabilizer model using this remote input signal.
+         Default: None
+
+      DiscontinuousExcitationControlDynamics:
+         Discontinuous excitation control model using this remote
+         input signal. Default: None
+
+      WindTurbineType3or4Dynamics:
+         Remote input signal used by these wind turbine Type 3 or 4
+         models. Default: None
+
+      WindPlantDynamics:
+         The remote signal with which this power plant is associated.
+         Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

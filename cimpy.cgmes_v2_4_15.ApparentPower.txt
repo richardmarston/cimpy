@@ -1,0 +1,24 @@
+cimpy.cgmes_v2_4_15.ApparentPower module
+****************************************
+
+class cimpy.cgmes_v2_4_15.ApparentPower.ApparentPower(value=0.0, unit=None, multiplier=None)
+
+   Product of the RMS value of the voltage and the RMS value of the
+   current.
+
+   Value:
+      Default: 0.0
+
+   Unit:
+      Default: None
+
+   Multiplier:
+      Default: None
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

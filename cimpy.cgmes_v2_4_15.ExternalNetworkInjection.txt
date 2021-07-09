@@ -1,0 +1,218 @@
+cimpy.cgmes_v2_4_15.ExternalNetworkInjection module
+***************************************************
+
+class cimpy.cgmes_v2_4_15.ExternalNetworkInjection.ExternalNetworkInjection(governorSCD=0.0, maxP=0.0, maxQ=0.0, minP=0.0, minQ=0.0, ikSecond=False, maxInitialSymShCCurrent=0.0, maxR0ToX0Ratio=0.0, maxR1ToX1Ratio=0.0, maxZ0ToZ1Ratio=0.0, minInitialSymShCCurrent=0.0, minR0ToX0Ratio=0.0, minR1ToX1Ratio=0.0, minZ0ToZ1Ratio=0.0, voltageFactor=0.0, referencePriority=0, p=0.0, q=0.0, *args, **kw_args)
+
+      This class represents external network and it is used for IEC
+      60909 calculations.
+
+      governorSCD:
+         Power Frequency Bias. This is the change in power injection
+         divided by the change in frequency and negated.  A positive
+         value of the power frequency bias provides additional power
+         injection upon a drop in frequency. Default: 0.0
+
+      maxP:
+         Maximum active power of the injection. Default: 0.0
+
+      maxQ:
+         Not for short circuit modelling; It is used for modelling of
+         infeed for load flow exchange. If maxQ and minQ are not used
+         ReactiveCapabilityCurve can be used Default: 0.0
+
+      minP:
+         Minimum active power of the injection. Default: 0.0
+
+      minQ:
+         Not for short circuit modelling; It is used for modelling of
+         infeed for load flow exchange. If maxQ and minQ are not used
+         ReactiveCapabilityCurve can be used Default: 0.0
+
+      ikSecond:
+         Indicates whether initial symmetrical short-circuit current
+         and power have been calculated according to IEC (Ik`).
+         Default: False
+
+      maxInitialSymShCCurrent:
+         Maximum initial symmetrical short-circuit currents (Ik` max)
+         in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data
+         exchange according to IEC 60909 Default: 0.0
+
+      maxR0ToX0Ratio:
+         Maximum ratio of zero sequence resistance of Network Feeder
+         to its zero sequence reactance (R(0)/X(0) max). Used for
+         short circuit data exchange according to IEC 60909 Default:
+         0.0
+
+      maxR1ToX1Ratio:
+         Maximum ratio of positive sequence resistance of Network
+         Feeder to its positive sequence reactance (R(1)/X(1) max).
+         Used for short circuit data exchange according to IEC 60909
+         Default: 0.0
+
+      maxZ0ToZ1Ratio:
+         Maximum ratio of zero sequence impedance to its positive
+         sequence impedance (Z(0)/Z(1) max). Used for short circuit
+         data exchange according to IEC 60909 Default: 0.0
+
+      minInitialSymShCCurrent:
+         Minimum initial symmetrical short-circuit currents (Ik` min)
+         in A (Ik` = Sk`/(SQRT(3) Un)). Used for short circuit data
+         exchange according to IEC 60909 Default: 0.0
+
+      minR0ToX0Ratio:
+         Indicates whether initial symmetrical short-circuit current
+         and power have been calculated according to IEC (Ik`). Used
+         for short circuit data exchange according to IEC 6090
+         Default: 0.0
+
+      minR1ToX1Ratio:
+         Minimum ratio of positive sequence resistance of Network
+         Feeder to its positive sequence reactance (R(1)/X(1) min).
+         Used for short circuit data exchange according to IEC 60909
+         Default: 0.0
+
+      minZ0ToZ1Ratio:
+         Minimum ratio of zero sequence impedance to its positive
+         sequence impedance (Z(0)/Z(1) min). Used for short circuit
+         data exchange according to IEC 60909 Default: 0.0
+
+      voltageFactor:
+         Voltage factor in pu, which was used to calculate short-
+         circuit current Ik` and power Sk`. Default: 0.0
+
+      referencePriority:
+         Priority of unit for use as powerflow voltage phase angle
+         reference bus selection. 0 = don t care (default) 1 = highest
+         priority. 2 is less than 1 and so on. Default: 0
+
+      p:
+         Active power injection. Load sign convention is used, i.e.
+         positive sign means flow out from a node. Starting value for
+         steady state solutions. Default: 0.0
+
+      q:
+         Reactive power injection. Load sign convention is used, i.e.
+         positive sign means flow out from a node. Starting value for
+         steady state solutions. Default: 0.0
+
+   Documentation of parent class RegulatingCondEq:
+
+      A type of conducting equipment that can regulate a quantity
+      (i.e. voltage or flow) at a specific point in the network.
+
+      RegulatingControl:
+         The regulating control scheme in which this equipment
+         participates. Default: None
+
+      controlEnabled:
+         Specifies the regulation status of the equipment.  True is
+         regulating, false is not regulating. Default: False
+
+   Documentation of parent class ConductingEquipment:
+
+      The parts of the AC power system that are designed to carry
+      current or that are conductively connected through terminals.
+
+      BaseVoltage:
+         All conducting equipment with this base voltage.  Use only
+         when there is no voltage level container used and only one
+         base voltage applies.  For example, not used for
+         transformers. Default: None
+
+      Terminals:
+         Conducting equipment have terminals that may be connected to
+         other conducting equipment terminals via connectivity nodes
+         or topological nodes. Default: "list"
+
+      SvStatus:
+         The status state variable associated with this conducting
+         equipment. Default: None
+
+   Documentation of parent class Equipment:
+
+      The parts of a power system that are physical devices,
+      electronic or mechanical.
+
+      aggregate:
+         The single instance of equipment represents multiple pieces
+         of equipment that have been modeled together as an aggregate.
+         Examples would be power transformers or synchronous machines
+         operating in parallel modeled as a single aggregate power
+         transformer or aggregate synchronous machine.  This is not to
+         be used to indicate equipment that is part of a group of
+         interdependent equipment produced by a network production
+         program. Default: False
+
+      EquipmentContainer:
+         Container of this equipment. Default: None
+
+      OperationalLimitSet:
+         The operational limit sets associated with this equipment.
+         Default: "list"
+
+   Documentation of parent class PowerSystemResource:
+
+      A power system resource can be an item of equipment such as a
+      switch, an equipment container containing many individual items
+      of equipment such as a substation, or an organisational entity
+      such as sub-control area. Power system resources can have
+      measurements associated.
+
+      Controls:
+         Regulating device governed by this control output. Default:
+         "list"
+
+      Measurements:
+         The power system resource that contains the measurement.
+         Default: "list"
+
+      Location:
+         Location of this power system resource. Default: None
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

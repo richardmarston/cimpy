@@ -1,0 +1,15 @@
+cimpy.cgmes_v2_4_15.VsPpccControlKind module
+********************************************
+
+class cimpy.cgmes_v2_4_15.VsPpccControlKind.VsPpccControlKind
+
+   Types applicable to the control of real power and/or DC voltage by
+   voltage source converter.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

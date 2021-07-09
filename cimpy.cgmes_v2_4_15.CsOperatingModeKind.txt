@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.CsOperatingModeKind module
+**********************************************
+
+class cimpy.cgmes_v2_4_15.CsOperatingModeKind.CsOperatingModeKind
+
+   Operating mode for HVDC line operating as Current Source Converter.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

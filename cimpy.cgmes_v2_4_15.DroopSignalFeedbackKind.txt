@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.DroopSignalFeedbackKind module
+**************************************************
+
+class cimpy.cgmes_v2_4_15.DroopSignalFeedbackKind.DroopSignalFeedbackKind
+
+   Governor droop signal feedback source.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.AsynchronousMachineKind module
+**************************************************
+
+class cimpy.cgmes_v2_4_15.AsynchronousMachineKind.AsynchronousMachineKind
+
+   Kind of Asynchronous Machine.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

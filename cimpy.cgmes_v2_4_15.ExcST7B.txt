@@ -1,0 +1,163 @@
+cimpy.cgmes_v2_4_15.ExcST7B module
+**********************************
+
+class cimpy.cgmes_v2_4_15.ExcST7B.ExcST7B(kh=0.0, kia=0.0, kl=0.0, kpa=0.0, oelin=None, tb=0, tc=0, tf=0, tg=0, tia=0, ts=0, uelin=None, vmax=0.0, vmin=0.0, vrmax=0.0, vrmin=0.0, *args, **kw_args)
+
+      Modified IEEE ST7B static excitation system without stator
+      current limiter (SCL) and current compensator (DROOP) inputs.
+
+      kh:
+         High-value gate feedback gain (Kh).  Typical Value = 1.
+         Default: 0.0
+
+      kia:
+         Voltage regulator integral gain (Kia).  Typical Value = 1.
+         Default: 0.0
+
+      kl:
+         Low-value gate feedback gain (Kl).  Typical Value = 1.
+         Default: 0.0
+
+      kpa:
+         Voltage regulator proportional gain (Kpa).  Typical Value =
+         40. Default: 0.0
+
+      oelin:
+         OEL input selector (OELin). Typical Value = noOELinput.
+         Default: None
+
+      tb:
+         Regulator lag time constant (Tb).  Typical Value = 1.
+         Default: 0
+
+      tc:
+         Regulator lead time constant (Tc).  Typical Value = 1.
+         Default: 0
+
+      tf:
+         Excitation control system stabilizer time constant (Tf).
+         Typical Value = 1. Default: 0
+
+      tg:
+         Feedback time constant of inner loop field voltage regulator
+         (Tg).  Typical Value = 1. Default: 0
+
+      tia:
+         Feedback time constant (Tia).  Typical Value = 3. Default: 0
+
+      ts:
+         Rectifier firing time constant (Ts).  Typical Value = 0.
+         Default: 0
+
+      uelin:
+         UEL input selector (UELin). Typical Value = noUELinput.
+         Default: None
+
+      vmax:
+         Maximum voltage reference signal (Vmax).  Typical Value =
+         1.1. Default: 0.0
+
+      vmin:
+         Minimum voltage reference signal (Vmin).  Typical Value =
+         0.9. Default: 0.0
+
+      vrmax:
+         Maximum voltage regulator output (Vrmax).  Typical Value = 5.
+         Default: 0.0
+
+      vrmin:
+         Minimum voltage regulator output (Vrmin).  Typical Value =
+         -4.5. Default: 0.0
+
+   Documentation of parent class ExcitationSystemDynamics:
+
+      Excitation system function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Synchronous machine model with which this excitation system
+         model is associated. Default: None
+
+      PowerSystemStabilizerDynamics:
+         Power system stabilizer model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model associated with
+         this excitation system model. Default: None
+
+      VoltageCompensatorDynamics:
+         Voltage compensator model associated with this excitation
+         system model. Default: None
+
+      DiscontinuousExcitationControlDynamics:
+         Discontinuous excitation control model associated with this
+         excitation system model. Default: None
+
+      UnderexcitationLimiterDynamics:
+         Undrexcitation limiter model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType2Dynamics:
+         Power Factor or VAr controller Type II model associated with
+         this excitation system model. Default: None
+
+      OverexcitationLimiterDynamics:
+         Overexcitation limiter model associated with this excitation
+         system model. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

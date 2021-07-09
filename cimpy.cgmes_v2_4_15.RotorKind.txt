@@ -1,0 +1,14 @@
+cimpy.cgmes_v2_4_15.RotorKind module
+************************************
+
+class cimpy.cgmes_v2_4_15.RotorKind.RotorKind
+
+   Type of rotor on physical machine.
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

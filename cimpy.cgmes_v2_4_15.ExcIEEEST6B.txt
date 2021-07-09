@@ -1,0 +1,160 @@
+cimpy.cgmes_v2_4_15.ExcIEEEST6B module
+**************************************
+
+class cimpy.cgmes_v2_4_15.ExcIEEEST6B.ExcIEEEST6B(ilr=0.0, kci=0.0, kff=0.0, kg=0.0, kia=0.0, klr=0.0, km=0.0, kpa=0.0, oelin=None, tg=0, vamax=0.0, vamin=0.0, vrmax=0.0, vrmin=0.0, *args, **kw_args)
+
+      The class represents IEEE Std 421.5-2005 type ST6B model. This
+      model consists of a PI voltage regulator with an inner loop
+      field voltage regulator and pre-control. The field voltage
+      regulator implements a proportional control. The pre-control and
+      the delay in the feedback circuit increase the dynamic response.
+      Reference: IEEE Standard 421.5-2005 Section 7.6.
+
+      ilr:
+         Exciter output current limit reference (I).  Typical Value =
+         4.164. Default: 0.0
+
+      kci:
+         Exciter output current limit adjustment (K).  Typical Value =
+         1.0577. Default: 0.0
+
+      kff:
+         Pre-control gain constant of the inner loop field regulator
+         (K). Typical Value = 1. Default: 0.0
+
+      kg:
+         Feedback gain constant of the inner loop field regulator (K).
+         Typical Value = 1. Default: 0.0
+
+      kia:
+         Voltage regulator integral gain (K).  Typical Value = 45.094.
+         Default: 0.0
+
+      klr:
+         Exciter output current limiter gain (K).  Typical Value =
+         17.33. Default: 0.0
+
+      km:
+         Forward gain constant of the inner loop field regulator (K).
+         Typical Value = 1. Default: 0.0
+
+      kpa:
+         Voltage regulator proportional gain (K).  Typical Value =
+         18.038. Default: 0.0
+
+      oelin:
+         OEL input selector (OELin). Typical Value = noOELinput.
+         Default: None
+
+      tg:
+         Feedback time constant of inner loop field voltage regulator
+         (T). Typical Value = 0.02. Default: 0
+
+      vamax:
+         Maximum voltage regulator output (V).  Typical Value = 4.81.
+         Default: 0.0
+
+      vamin:
+         Minimum voltage regulator output (V).  Typical Value = -3.85.
+         Default: 0.0
+
+      vrmax:
+         Maximum voltage regulator output (V).  Typical Value = 4.81.
+         Default: 0.0
+
+      vrmin:
+         Minimum voltage regulator output (V).  Typical Value = -3.85.
+         Default: 0.0
+
+   Documentation of parent class ExcitationSystemDynamics:
+
+      Excitation system function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Synchronous machine model with which this excitation system
+         model is associated. Default: None
+
+      PowerSystemStabilizerDynamics:
+         Power system stabilizer model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType1Dynamics:
+         Power Factor or VAr controller Type I model associated with
+         this excitation system model. Default: None
+
+      VoltageCompensatorDynamics:
+         Voltage compensator model associated with this excitation
+         system model. Default: None
+
+      DiscontinuousExcitationControlDynamics:
+         Discontinuous excitation control model associated with this
+         excitation system model. Default: None
+
+      UnderexcitationLimiterDynamics:
+         Undrexcitation limiter model associated with this excitation
+         system model. Default: None
+
+      PFVArControllerType2Dynamics:
+         Power Factor or VAr controller Type II model associated with
+         this excitation system model. Default: None
+
+      OverexcitationLimiterDynamics:
+         Overexcitation limiter model associated with this excitation
+         system model. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

@@ -1,0 +1,142 @@
+cimpy.cgmes_v2_4_15.GovSteamCC module
+*************************************
+
+class cimpy.cgmes_v2_4_15.GovSteamCC.GovSteamCC(mwbase=0.0, pmaxhp=0.0, rhp=0.0, t1hp=0, t3hp=0, t4hp=0, t5hp=0, fhp=0.0, dhp=0.0, pmaxlp=0.0, rlp=0.0, t1lp=0, t3lp=0, t4lp=0, t5lp=0, flp=0.0, dlp=0.0, *args, **kw_args)
+
+      Cross compound turbine governor model.
+
+      mwbase:
+         Base for power values (MWbase) (>0).  Unit = MW. Default: 0.0
+
+      pmaxhp:
+         Maximum HP value position (Pmaxhp).  Typical Value = 1.
+         Default: 0.0
+
+      rhp:
+         HP governor droop (Rhp).  Typical Value = 0.05. Default: 0.0
+
+      t1hp:
+         HP governor time constant (T1hp).  Typical Value = 0.1.
+         Default: 0
+
+      t3hp:
+         HP turbine time constant (T3hp).  Typical Value = 0.1.
+         Default: 0
+
+      t4hp:
+         HP turbine time constant (T4hp).  Typical Value = 0.1.
+         Default: 0
+
+      t5hp:
+         HP reheater time constant (T5hp).  Typical Value = 10.
+         Default: 0
+
+      fhp:
+         Fraction of HP power ahead of reheater (Fhp).  Typical Value
+         = 0.3. Default: 0.0
+
+      dhp:
+         HP damping factor (Dhp).  Typical Value = 0. Default: 0.0
+
+      pmaxlp:
+         Maximum LP value position (Pmaxlp).  Typical Value = 1.
+         Default: 0.0
+
+      rlp:
+         LP governor droop (Rlp).  Typical Value = 0.05. Default: 0.0
+
+      t1lp:
+         LP governor time constant (T1lp).  Typical Value = 0.1.
+         Default: 0
+
+      t3lp:
+         LP turbine time constant (T3lp).  Typical Value = 0.1.
+         Default: 0
+
+      t4lp:
+         LP turbine time constant (T4lp).  Typical Value = 0.1.
+         Default: 0
+
+      t5lp:
+         LP reheater time constant (T5lp).  Typical Value = 10.
+         Default: 0
+
+      flp:
+         Fraction of LP power ahead of reheater (Flp).  Typical Value
+         = 0.7. Default: 0.0
+
+      dlp:
+         LP damping factor (Dlp).  Typical Value = 0. Default: 0.0
+
+   Documentation of parent class TurbineGovernorDynamics:
+
+      Turbine-governor function block whose behavior is described by
+      reference to a standard model
+
+      SynchronousMachineDynamics:
+         Turbine-governor model associated with this synchronous
+         machine model. Default: "list"
+
+      AsynchronousMachineDynamics:
+         Asynchronous machine model with which this turbine-governor
+         model is associated. Default: None
+
+      TurbineLoadControllerDynamics:
+         Turbine load controller providing input to this turbine-
+         governor. Default: None
+
+   Documentation of parent class DynamicsFunctionBlock:
+
+      Abstract parent class for all Dynamics function blocks.
+
+      enabled:
+         Function block used indicator. true = use of function block
+         is enabled false = use of function block is disabled.
+         Default: False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================

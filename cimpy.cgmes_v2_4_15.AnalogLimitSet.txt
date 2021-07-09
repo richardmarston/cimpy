@@ -1,0 +1,75 @@
+cimpy.cgmes_v2_4_15.AnalogLimitSet module
+*****************************************
+
+class cimpy.cgmes_v2_4_15.AnalogLimitSet.AnalogLimitSet(Measurements='list', Limits='list', *args, **kw_args)
+
+      An AnalogLimitSet specifies a set of Limits that are associated
+      with an Analog measurement.
+
+      Measurements:
+         A measurement may have zero or more limit ranges defined for
+         it. Default: "list"
+
+      Limits:
+         The set of limits. Default: "list"
+
+   Documentation of parent class LimitSet:
+
+      Specifies a set of Limits that are associated with a
+      Measurement. A Measurement may have several LimitSets
+      corresponding to seasonal or other changing conditions. The
+      condition is captured in the name and description attributes.
+      The same LimitSet may be used for several Measurements. In
+      particular percentage limits are used this way.
+
+      isPercentageLimits:
+         Tells if the limit values are in percentage of normalValue or
+         the specified Unit for Measurements and Controls. Default:
+         False
+
+   Documentation of parent class IdentifiedObject:
+
+      This is a root class to provide common identification for all
+      classes needing identification and naming attributes.
+
+      DiagramObjects:
+         The domain object to which this diagram object is associated.
+         Default: "list"
+
+      mRID:
+         Master resource identifier issued by a model authority. The
+         mRID is globally unique within an exchange context. Global
+         uniqueness is easily achieved by using a UUID,  as specified
+         in RFC 4122, for the mRID.  The use of UUID is strongly
+         recommended. For CIMXML data files in RDF syntax conforming
+         to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or
+         rdf:about attributes that identify CIM object elements.
+         Default: ''
+
+      name:
+         The name is any free human readable and possibly non unique
+         text naming the object. Default: ''
+
+      description:
+         The description is a free human readable text describing or
+         naming the object. It may be non unique and may not correlate
+         to a naming hierarchy. Default: ''
+
+      energyIdentCodeEic:
+         The attribute is used for an exchange of the EIC code (Energy
+         identification Code). The length of the string is 16
+         characters as defined by the EIC code. References: Default:
+         ''
+
+      shortName:
+         The attribute is used for an exchange of a human readable
+         short name with length of the string 12 characters maximum.
+         Default: ''
+
+   cgmesProfile
+
+      alias of "cimpy.cgmes_v2_4_15.Base.Profile"
+
+
+Inheritance Diagram:
+====================
